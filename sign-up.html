@@ -3,27 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Sign-Up</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="css/sign_up.css">
+    
 </head>
 <body>
-    <h1 style="text-align: center;">User Sign-Up</h1>
-    <form action="/signup" method="post">
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required><br><br>
+    <div class="signup-container">
+        <div class="signup-left">
+            <div class="left-content">
+                <h1>Explore the world. Join our community</h1>
+                <p> We invite you to join the tribe.</p>
+            </div>
+        </div>
+        <div class="signup-right">
+            <div class="form-container">
+                <h2>SIGN UP</h2>
+                
+                <h5> please create your account here</h5>
+                <form>
+                    
+                    <input type="name" id="name" placeholder="Enter your full name" required>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="show-password">
+                        <label for="show-password">Show password</label>
+                    </div>
+                    
+                    <button type="submit" class="signup-btn">Sign up</button>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+                    <div class="or-separator">or</div>
 
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <label for="confirm_password">Confirm Password:</label><br>
-        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
-
-        <button type="submit">Sign Up</button>
-    </form>
-
-    <p>Already have an account? <a href="/login">Sign In</a></p>
+                    <button type="button" class="google-btn">Continue with Google</button>
+                    <div class="signin"> 
+                        <p>Don’t have an account? <a href="/signin">Sign In</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

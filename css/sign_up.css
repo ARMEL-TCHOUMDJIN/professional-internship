@@ -1,0 +1,136 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #a7efda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Signup Container */
+.signup-container {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    box-shadow: 0 10px 30px rgba(30, 32, 32, 0.735);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left Panel */
+.signup-left {
+    flex: 1;
+    background-size: cover;
+    color: white;
+    padding: 40px;
+    position: relative;
+}
+
+.left-content {
+    position: relative;
+}
+
+.left-content h1 {
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+.left-content a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Right Panel */
+.signup-right {
+    flex: 1;
+    background-color: white;
+    
+}
+
+.form-container {
+    width: 80%;
+    margin:auto;
+
+}
+
+.form-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.form-container h5 {
+    margin-bottom: 60px;
+    margin-top: 5px;
+}
+label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 12px;
+}
+
+input[type="name"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+  
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.checkbox-container input {
+    margin-right: 9px;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 5px;
+    background-color: #20c997;
+    color: white;
+    border: none;
+    border-radius: 2px;
+
+}
+
+.signup-btn:hover {
+    background-color: #17a2b8;
+}
+
+.or-separator {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.google-btn {
+    width: 100%;
+    padding: 5px;
+    background-color: #ffffff;
+    border: solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-btn:hover {
+    background-color: #f1f1f1;
+}
+
+.signin p {
+    margin-top: 10px;
+}
