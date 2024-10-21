@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #aa98b5;
+    color: #fff;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+}
+
+.signup-btn, .login-btn{
+    background-color: #e0ecde; /* Light green to complement */
+    color: #aa98b5; /* Purple text */
+    border-radius: 4px;
+    font-weight: bold;
+}
+.sign_in{
+    background-color: #9a9999;
+    width: 40%;
+    margin: auto;
+    padding: 30px;
+}
+.signup-btn:hover {
+    background-color: #d1e4d4; /* Slightly darker green on hover */
+}
+
+.login-btn {
+    background-color: #333; /* Darker button for contrast */
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #555; /* Lighter on hover */
+}
+
+section {
+    background-color: #e0ecde;
+    padding: 2em;
+    text-align: center;
+}
+
+.animated-text {
+    font-size: 2em;
+    animation: slideIn 3s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.destination-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.destination {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.destination:hover {
+    transform: scale(1.05);
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
