@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.contact-form, .contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+.contact-form h2, .contact-info h2 {
+    color: #2980b9;
+}
+
+.contact-form form label {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form form input, 
+.contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form form button {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.contact-form form button:hover {
+    background-color: #1a5a7b;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info img {
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.social-media h2 {
+    color: #2980b9;
+    font-size: 24px;
+}
+
+.social-media .icons a {
+    margin: 0 15px;
+}
+
+.social-media .icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s;
+}
+
+.social-media .icons img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .contact-us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .contact-info {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
